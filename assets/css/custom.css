@@ -230,6 +230,15 @@ body {
   .w-sm-17 {
     width: 7rem !important;
   }
+  .sticky-icon {
+    position: fixed;
+    top: 90%;
+    right: 1.5rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
 }
 .fw-800 {
   font-weight: 800;
@@ -319,6 +328,15 @@ body {
   .line_path_mobile2 {
     display: none;
   }
+  .sticky-icon {
+    position: fixed;
+    top: 90%;
+    right: 1.5rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -356,6 +374,15 @@ body {
   }
   .line_path_mobile2 {
     display: none;
+  }
+  .sticky-icon {
+    position: fixed;
+    top: 90%;
+    right: 1.5rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
   }
 }
 .z-two {
