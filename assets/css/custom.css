@@ -476,3 +476,17 @@ body {
     color: #0e0d0d !important;
   }
 }
+
+.tutorial-nav {
+  border: 1px solid #30b0ff !important;
+}
+
+.tutorial-nav.active {
+  color: white !important;
+  background-color: #30b0ff !important;
+}
+
+.tutorial-nav:hover {
+  color: white !important;
+  background-color: #30b0ff !important;
+}
