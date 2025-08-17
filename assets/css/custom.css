@@ -543,3 +543,7 @@ body {
   color: white !important;
   background-color: #30b0ff !important;
 }
+
+.pricing-card-bg {
+  background-color: #EBEFF0;
+}
