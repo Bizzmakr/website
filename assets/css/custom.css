@@ -547,3 +547,14 @@ body {
 .pricing-card-bg {
   background-color: #EBEFF0;
 }
+
+.feature-list li {
+    list-style-type: none;
+}
+
+.feature-icon {
+    color: #7e7f808e;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
