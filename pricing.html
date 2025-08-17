@@ -26,22 +26,25 @@
 
   <body>
     <div class="content-wrapper">
+      <div class="sticky-icon lift">
+        <a href="https://api.whatsapp.com/send?phone=+8801341776458&amp;text=Hello%21%20Would%20you%20like%20to%20help%20me?" target="_blank"><img class="rounded" src="./assets/img/whatsapp-icon.png" alt="" /></a>
+      </div>
       <div class="bg-gradient-1">
         <nav class="navbar navbar-expand-lg classic transparent navbar-light">
           <div class="container flex-lg-row flex-nowrap align-items-center">
             <div class="navbar-brand w-100">
               <a href="./">
-                <img class="" src="./assets/img/logo.png" alt="company logo" style="height: 60px; width: 60px" />
+                <img class="h-10" src="./assets/img/logo-old.png" alt="company logo" />
               </a>
             </div>
             <div class="navbar-collapse offcanvas-nav">
               <div class="offcanvas-header d-lg-none d-xl-none">
-                <a href="./"><img src="./assets/img/logo-mobile.png" alt="" /></a>
+                <a href="./"><img src="./assets/img/logo-mobile.png" alt="company logo" /></a>
                 <button type="button" class="btn-close btn-close-dark offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
               </div>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center gap-2 d-lg-block" href="./">
+                  <a class="nav-link d-flex align-items-center gap-2 d-lg-block active" href="./">
                     <svg class="d-block d-lg-none w-3 type-1" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M0.666016 10.6667V4.66671C0.666016 4.4556 0.713349 4.2556 0.808015 4.06671C0.902682 3.87782 1.03313 3.72226 1.19935 3.60004L5.19935 0.600041C5.43268 0.422263 5.69935 0.333374 5.99935 0.333374C6.29935 0.333374 6.56602 0.422263 6.79935 0.600041L10.7993 3.60004C10.966 3.72226 11.0967 3.87782 11.1913 4.06671C11.286 4.2556 11.3331 4.4556 11.3327 4.66671V10.6667C11.3327 11.0334 11.202 11.3474 10.9407 11.6087C10.6793 11.87 10.3656 12.0005 9.99935 12H7.99935C7.81046 12 7.65224 11.936 7.52468 11.808C7.39713 11.68 7.33313 11.5218 7.33268 11.3334V8.00004C7.33268 7.81115 7.26868 7.65293 7.14068 7.52537C7.01268 7.39782 6.85446 7.33382 6.66602 7.33337H5.33268C5.14379 7.33337 4.98557 7.39737 4.85802 7.52537C4.73046 7.65337 4.66646 7.8116 4.66602 8.00004V11.3334C4.66602 11.5223 4.60202 11.6807 4.47402 11.8087C4.34602 11.9367 4.18779 12.0005 3.99935 12H1.99935C1.63268 12 1.3189 11.8696 1.05802 11.6087C0.797127 11.3478 0.66646 11.0338 0.666016 10.6667Z"
@@ -86,7 +89,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center gap-2 d-lg-block active" href="pricing.html">
+                  <a class="nav-link d-flex align-items-center gap-2 d-lg-block" href="pricing.html">
                     <svg class="d-block d-lg-none w-3 type-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
@@ -266,182 +269,110 @@
             </div>
             <!-- /column -->
           </div>
+          
           <!-- /.row -->
           <div class="row g-5">
-
             <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">For Freelancers</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For Clients</button>
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">For Freelancers</div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">For Clients</div>
-            </div>
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Basic Plan (Free Forever)</h5>
+                        <h1>BDT 0<p>/month<br>billed monthly</p></h1>
+                        <ul class="feature-list">
+                          <li><i class="fas fa-times feature-icon"></i>Limited daily swipes</li>
+                          <li><i class="fas fa-times feature-icon"></i>No instant access to see who swiped on you</li>
+                          <li><i class="fas fa-times feature-icon"></i>Basic filters only</li>
+                          <li><i class="fas fa-times feature-icon"></i>Limited backtracks and saved jobs</li>
+                          <li><i class="fas fa-times feature-icon"></i>Messaging not available</li>
+                          <li><i class="fas fa-times feature-icon"></i>In-app calling not included</li>
+                          <li><i class="fas fa-times feature-icon"></i>No profile verification badge</li>
+                          <li><i class="fas fa-times feature-icon"></i>Withdrawals processed within 4-5 business days</li>
+                          <li><i class="fas fa-times feature-icon"></i>Standard customer support</li>
+                        </ul>
+                      
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Premium Plan Most Popular</h5>
+                        <h1>BDT 499<p>/month<br>billed monthly</p></h1>
+                        <ul class="feature-list">
+                          <li><i class="fas fa-check feature-icon"></i>Unlimited job swipes</li>
+                          <li><i class="fas fa-check feature-icon"></i>See who swiped on you instantly</li>
+                          <li><i class="fas fa-check feature-icon"></i>Advanced filters (skill, rate, location)</li>
+                          <li><i class="fas fa-check feature-icon"></i>Unlimited backtrack & saved jobs</li>
+                          <li><i class="fas fa-check feature-icon"></i>Direct messaging</li>
+                          <li><i class="fas fa-check feature-icon"></i>120 minutes of in-app calling</li>
+                          <li><i class="fas fa-check feature-icon"></i>Profile verification badge</li>
+                          <li><i class="fas fa-check feature-icon"></i>Instant withdrawals</li>
+                          <li><i class="fas fa-check feature-icon"></i>Priority customer support (direct calls)</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <h2 class="display-1 mb-4 mb-md-8 text-center text-md-start" data-aos="fade-down" data-aos-delay="100">Freelancer</h2>
-            <div class="col-lg-6 px-1 px-md-3" data-aos="zoom-in">
-              <div class="border_2 py-4 py-md-7 p-md-7 h-100 lift shadow-1 bg-white d-flex flex-column justify-content-center">
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                 <div class="row">
-                  <div class="col-5 col-md-6 ps-5 ps-md-4">
-                    <img class="mb-2" src="./assets/img/pricing-icon.png" alt="" />
-                    <p class="display-4 fw-normal mb-2">Basic</p>
-                    <p class="display-2 fw-normal mb-2">00BDT</p>
-                    <p class="fw-normal mb-0">Lifetime free</p>
-                    <div class="bg-primary rounded-3 px-3 py-1 mb-2 text-white text-center">
-                      <p class="mb-0 fs-12">Start 7-day free trial</p>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Basic Plan (Free Forever)</h5>
+                        <h1>BDT 0<p>/month<br>billed monthly</p></h1>
+                        <ul class="feature-list">
+                          <li><i class="fas fa-times feature-icon"></i>Limited daily swipes</li>
+                          <li><i class="fas fa-times feature-icon"></i>No instant access to see who swiped on you</li>
+                          <li><i class="fas fa-times feature-icon"></i>Basic filters only</li>
+                          <li><i class="fas fa-times feature-icon"></i>Limited backtracks and saved jobs</li>
+                          <li><i class="fas fa-times feature-icon"></i>Messaging not available</li>
+                          <li><i class="fas fa-times feature-icon"></i>In-app calling not included</li>
+                          <li><i class="fas fa-times feature-icon"></i>No profile verification badge</li>
+                          <li><i class="fas fa-times feature-icon"></i>Withdrawals processed within 4-5 business days</li>
+                          <li><i class="fas fa-times feature-icon"></i>Standard customer support</li>
+                        </ul>
+                      
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-1 d-flex align-items-center">
-                    <div class="vr"></div>
-                  </div>
-                  <div class="col-6 col-md-5 pe-5 pe-md-4">
-                    <ul class="p-0 m-0 fs-sm-12 fs-14 list-unstyled">
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Advance filter</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Unlimited Swipe</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>See who likes you</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Direct call</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Direct message</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Get varified</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>See history</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Saved post</span>
-                      </li>
-                    </ul>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Premium Plan Most Popular</h5>
+                        <h1>BDT 499<p>/month<br>billed monthly</p></h1>
+                        <ul class="feature-list">
+                          <li><i class="fas fa-check feature-icon"></i>Unlimited job swipes</li>
+                          <li><i class="fas fa-check feature-icon"></i>See who swiped on you instantly</li>
+                          <li><i class="fas fa-check feature-icon"></i>Advanced filters (skill, rate, location)</li>
+                          <li><i class="fas fa-check feature-icon"></i>Unlimited backtrack & saved jobs</li>
+                          <li><i class="fas fa-check feature-icon"></i>Direct messaging</li>
+                          <li><i class="fas fa-check feature-icon"></i>120 minutes of in-app calling</li>
+                          <li><i class="fas fa-check feature-icon"></i>Profile verification badge</li>
+                          <li><i class="fas fa-check feature-icon"></i>Instant withdrawals</li>
+                          <li><i class="fas fa-check feature-icon"></i>Priority customer support (direct calls)</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- /column -->
-            <div class="col-lg-6 px-1 px-md-3" data-aos="zoom-in">
-              <div class="border_2 py-4 py-md-7 p-md-7 h-100 lift shadow-1 bg-white">
-                <div class="row">
-                  <div class="col-5 col-md-6 ps-5 ps-md-4">
-                    <div class="bg-gradient-5 d-inline-flex align-items-center p-1 p-md-3 mb-2 rounded-pill">
-                      <img src="./assets/img/pricing-premium-icon.png" alt="" />
-                      <div class="bg-white rounded-pill px-1 px-md-2">
-                        <span class="fs-sm-8 fs-12">7% commission</span>
-                      </div>
-                    </div>
-                    <p class="display-4 fw-normal mb-2">Premium</p>
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
-                      <p class="display-2 fw-normal mb-0">199BDT</p>
-                      <div>
-                        <p class="mb-0 fw-bold text-decoration-line-through">500BDT</p>
-                        <p class="mb-0 fw-light fs-12">/per month</p>
-                      </div>
-                    </div>
-                    <p class="fw-normal mb-0">Everything in Basic, Plus</p>
-                    <div class="bg-primary rounded-3 px-3 py-1 mb-2 text-white text-center">
-                      <p class="mb-0 fs-12">Get Premium</p>
-                    </div>
-                  </div>
-                  <div class="col-1 d-flex align-items-center">
-                    <div class="vr"></div>
-                  </div>
-                  <div class="col-6 col-md-5 pe-5 pe-md-4">
-                    <ul class="p-0 m-0 fs-14 list-unstyled">
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Advance filter</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Unlimited Swipe</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>See who likes you</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Direct call</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Direct message</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Get varified</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>See history</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1 mb-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Saved post</span>
-                      </li>
-                      <li class="d-flex align-items-center gap-1">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.44271 1.5835C13.3598 1.5835 16.526 4.74975 16.526 8.66683C16.526 12.5839 13.3598 15.7502 9.44271 15.7502C5.52562 15.7502 2.35938 12.5839 2.35938 8.66683C2.35938 4.74975 5.52562 1.5835 9.44271 1.5835ZM11.9856 5.12516L9.44271 7.66808L6.89979 5.12516L5.90104 6.12391L8.44396 8.66683L5.90104 11.2097L6.89979 12.2085L9.44271 9.66558L11.9856 12.2085L12.9844 11.2097L10.4415 8.66683L12.9844 6.12391L11.9856 5.12516Z" fill="#30B0FF" />
-                        </svg>
-                        <span>Charge will decrease</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /column -->
           </div>
           <!-- /.row -->
         </div>
