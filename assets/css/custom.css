@@ -562,3 +562,8 @@ body {
     margin-bottom: 15px;
     font-size: 16px;
 }
+
+.nav-logo {
+  font-size: 38px;
+  color: #30b0ff;
+}
