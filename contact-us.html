@@ -203,19 +203,19 @@
                 </div>
               </div>
               <div class="col-lg-7">
-                <form class="contact-form">
+                <form class="contact-form" method="POST" id="contactForm" data-action="https://formspree.io/f/mrbakkpa">
                   <div class="row gx-4">
                     <div class="col-md-6">
                       <div class="form-floating mb-4">
                         <label for="form_name">Name *</label>
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="write your name here" required />
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Write your name here" required />
                       </div>
                     </div>
                     <!-- /column -->
                     <div class="col-md-6">
                       <div class="form-floating mb-4">
                         <label for="form_email">Email *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="write your email here" required />
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Write your email here" required />
                       </div>
                     </div>
                     <!-- /column -->
@@ -223,20 +223,20 @@
                     <div class="col-12">
                       <div class="form-floating mb-4">
                         <label for="form_subject">Subject *</label>
-                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="write here" required />
+                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Write the subject here" required />
                       </div>
                     </div>
                     <!-- /column -->
                     <div class="col-12">
                       <div class="form-floating mb-4">
                         <label for="form_message">Message *</label>
-                        <textarea id="form_message" name="message" style="height: 150px" class="form-control" placeholder="write here" required></textarea>
+                        <textarea id="form_message" name="message" style="height: 150px" class="form-control" placeholder="Write details here" required></textarea>
                       </div>
                     </div>
                     <!-- /column -->
                     <div class="col-12">
                       <button class="btn btn-primary rounded-3 btn-send mb-3">
-                        <span class="me-2">submit</span>
+                        <span class="me-2">Submit</span>
                         <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M7.80474 4.02851C7.54439 3.76816 7.12228 3.76816 6.86193 4.02851C6.60158 4.28886 6.60158 4.71097 6.86193 4.97132L9.72386 7.83325H0.666667C0.298477 7.83325 0 8.13173 0 8.49992C0 8.86811 0.298477 9.16659 0.666667 9.16659H9.72386L6.86193 12.0285C6.60158 12.2889 6.60158 12.711 6.86193 12.9713C7.12228 13.2317 7.54439 13.2317 7.80474 12.9713L11.8047 8.97132C12.0651 8.71097 12.0651 8.28886 11.8047 8.02851L7.80474 4.02851Z" fill="white" />
                         </svg>
@@ -245,7 +245,44 @@
                     <!-- /column -->
                   </div>
                   <!-- /.row -->
+                  <div id="form-success-message" class="alert alert-success d-none mt-3" role="alert">
+                    Thank you! Your message has been sent.
+                  </div>
                 </form>
+                <script>
+                  // AJAX Formspree submission for contact form (no redirect)
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var form = document.getElementById('contactForm');
+                    var successMsg = document.getElementById('form-success-message');
+                    if (form) {
+                      form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        var formData = new FormData(form);
+                        var actionUrl = form.getAttribute('data-action');
+                        fetch(actionUrl, {
+                          method: 'POST',
+                          body: formData,
+                          headers: { 'Accept': 'application/json' }
+                        })
+                        .then(function (response) {
+                          if (response.ok) {
+                            form.reset();
+                            if (successMsg) {
+                              successMsg.classList.remove('d-none');
+                            }
+                          } else {
+                            response.json().then(function (data) {
+                              alert(data.error || 'There was a problem submitting your form.');
+                            });
+                          }
+                        })
+                        .catch(function () {
+                          alert('There was a problem submitting your form.');
+                        });
+                      });
+                    }
+                  });
+                </script>
                 <!-- /form -->
               </div>
             </div>
