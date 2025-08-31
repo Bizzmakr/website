@@ -308,6 +308,10 @@ body {
     top: 35.5%;
     z-index: 1;
   }
+  .feature-list li {
+    list-style-type: none;
+    font-size: 12px;
+  }
 }
 @media (min-width: 501px) and (max-width: 1199px) {
   .line_path {
