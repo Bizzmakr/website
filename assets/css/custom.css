@@ -572,3 +572,8 @@ body {
   font-size: 28px;
   color: #30b0ff;
 }
+
+.progress-wrap {
+  bottom: 70px;
+  right: 20px;
+}
