@@ -494,8 +494,8 @@
                           />
                         </svg>
                         <span class="sib-form-message-panel__inner-text">
-                          Your message has been sent. We&amp;#039;ll reach out
-                          soon. Thanks.
+                          Thanks — your message was sent. We'll get back to you
+                          shortly.
                         </span>
                       </div>
                     </div>
@@ -1437,16 +1437,12 @@
         var H = "#brevo-success";
 
         function showMessage() {
-          var el = document.getElementById("brevo-success-message");
-          if (!el) return;
-          el.style.display = "block";
-
-          // Reset the embedded Brevo/Sibforms form (if present) so fields are cleared.
+          // Only show the inline Brevo success panel; do not show the floating banner.
+          var inlineSuccess = document.getElementById("success-message");
           try {
+            // Reset the embedded Brevo/Sibforms form (if present) so fields are cleared.
             var sibForm = document.getElementById("sib-form");
-            if (sibForm && typeof sibForm.reset === "function") {
-              sibForm.reset();
-            }
+            if (sibForm && typeof sibForm.reset === "function") sibForm.reset();
             // Reset any grecaptcha widget if present
             if (
               window.grecaptcha &&
@@ -1458,21 +1454,14 @@
                 /* ignore */
               }
             }
-
-            // If the inline Brevo success panel exists, show it as well.
-            var inlineSuccess = document.getElementById("success-message");
-            if (inlineSuccess) {
-              inlineSuccess.style.display = "block";
-            }
+            if (inlineSuccess) inlineSuccess.style.display = "block";
           } catch (e) {
             console.error("Error resetting sib form or captcha:", e);
           }
 
-          // Show banner and inline panel for ~11s (between 10-12s requested)
+          // Show inline panel for ~11s
           clearTimeout(window.__brevoHideTimeout);
           window.__brevoHideTimeout = setTimeout(function () {
-            if (el) el.style.display = "none";
-            var inlineSuccess = document.getElementById("success-message");
             if (inlineSuccess) inlineSuccess.style.display = "none";
           }, 11000);
 
@@ -1490,10 +1479,10 @@
         }
 
         function hideMessage() {
-          var el = document.getElementById("brevo-success-message");
-          if (el) el.style.display = "none";
           var inlineSuccess = document.getElementById("success-message");
           if (inlineSuccess) inlineSuccess.style.display = "none";
+          var el = document.getElementById("brevo-success-message");
+          if (el) el.style.display = "none";
         }
 
         document.addEventListener("DOMContentLoaded", function () {
