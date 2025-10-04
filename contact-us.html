@@ -984,30 +984,13 @@
       (function () {
         var H = "#brevo-success";
 
-        function removeFormElements() {
-          try {
-            // Remove the embedded Brevo/Sibforms iframe (matches sibforms.com embeds)
-            var iframe = document.querySelector(
-              'iframe[src*="sibforms.com"], iframe[src*="brevo"]'
-            );
-            if (iframe && iframe.parentNode)
-              iframe.parentNode.removeChild(iframe);
-            // Remove the fallback contact form if present
-            var contactForm = document.querySelector(".contact-form");
-            if (contactForm && contactForm.parentNode)
-              contactForm.parentNode.removeChild(contactForm);
-          } catch (e) {
-            // don't block showing the message if removal fails
-            console.error("Error removing form elements:", e);
-          }
-        }
+  // NOTE: we intentionally do NOT remove or hide the iframe or fallback form here.
+  // The page should keep showing the embedded form area after a successful submission.
 
         function showMessage() {
           var el = document.getElementById("brevo-success-message");
           if (!el) return;
           el.style.display = "block";
-          // Remove the form elements so the form is no longer visible/interactive
-          removeFormElements();
           // Optionally auto-hide after 6s
           clearTimeout(window.__brevoHideTimeout);
           window.__brevoHideTimeout = setTimeout(function () {
@@ -1042,10 +1025,11 @@
 
           // Also listen for postMessage events from the embedded iframe (Brevo / Sibforms).
           // Some embed flows notify the parent window via postMessage instead of changing the hash.
+          // We handle these events only to show the success banner; we do NOT remove or hide
+          // any form elements so the page remains unchanged besides the banner.
           window.addEventListener("message", function (e) {
             try {
               var origin = (e.origin || "").toLowerCase();
-              // coarse origin check for known providers
               if (
                 origin.indexOf("sibforms.com") !== -1 ||
                 origin.indexOf("brevo") !== -1 ||
