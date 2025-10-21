@@ -237,7 +237,9 @@
                         fill="#30B0FF"
                       />
                     </svg>
-                    <a href="tutorials.html" class="text-black text-decoration-none fs-14"
+                    <a
+                      href="tutorials.html"
+                      class="text-black text-decoration-none fs-14"
                       >Check the link</a
                     >
                   </div>
@@ -334,13 +336,14 @@
                 tabindex="0"
               >
                 <div class="row">
-                  <div class="col my-4">
+                  <!-- Video 1 (playlist last -> first order) -->
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
                         <img
-                          src="https://img.youtube.com/vi/GPzBeGDaNII/hqdefault.jpg"
+                          src="https://img.youtube.com/vi/CNsfdreYLss/hqdefault.jpg"
                           class="card-img-top"
-                          alt="Tutorial thumbnail"
+                          alt="How to create a freelancing account in Bizzmakr?"
                         />
                         <button
                           type="button"
@@ -352,7 +355,7 @@
                             border: none;
                           "
                           data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
+                          data-bs-target="#videoModal1"
                         >
                           <svg
                             width="40"
@@ -372,9 +375,9 @@
                       <!-- Video Modal -->
                       <div
                         class="modal fade"
-                        id="videoModal"
+                        id="videoModal1"
                         tabindex="-1"
-                        aria-labelledby="videoModalLabel"
+                        aria-labelledby="videoModalLabel1"
                         aria-hidden="true"
                       >
                         <div
@@ -390,7 +393,7 @@
                               ></button>
                               <div class="ratio ratio-16x9">
                                 <iframe
-                                  id="modalVideo"
+                                  id="modalVideo1"
                                   width="560"
                                   height="315"
                                   src=""
@@ -405,31 +408,13 @@
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
+
                       <div class="card-body">
                         <h5 class="card-title">
-                          How to open a Freelancing account
+                          How to create a freelancing account in Bizzmakr?
                         </h5>
                         <a
-                          href="https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1"
+                          href="https://www.youtube.com/watch?v=CNsfdreYLss"
                           target="_blank"
                           class="btn btn-primary"
                           >Watch it now</a
@@ -437,13 +422,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col my-4">
+
+                  <!-- Video 2 -->
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
                         <img
-                          src="https://img.youtube.com/vi/GPzBeGDaNII/hqdefault.jpg"
+                          src="https://img.youtube.com/vi/9PNhFJMuy_o/hqdefault.jpg"
                           class="card-img-top"
-                          alt="Tutorial thumbnail"
+                          alt="How to get clients in Bizzmakr?"
                         />
                         <button
                           type="button"
@@ -455,7 +442,7 @@
                             border: none;
                           "
                           data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
+                          data-bs-target="#videoModal2"
                         >
                           <svg
                             width="40"
@@ -472,12 +459,11 @@
                           </svg>
                         </button>
                       </div>
-                      <!-- Video Modal -->
                       <div
                         class="modal fade"
-                        id="videoModal"
+                        id="videoModal2"
                         tabindex="-1"
-                        aria-labelledby="videoModalLabel"
+                        aria-labelledby="videoModalLabel2"
                         aria-hidden="true"
                       >
                         <div
@@ -493,7 +479,7 @@
                               ></button>
                               <div class="ratio ratio-16x9">
                                 <iframe
-                                  id="modalVideo"
+                                  id="modalVideo2"
                                   width="560"
                                   height="315"
                                   src=""
@@ -508,31 +494,13 @@
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
+
                       <div class="card-body">
                         <h5 class="card-title">
-                          How to open a Freelancing account
+                          How to get clients in Bizzmakr?
                         </h5>
                         <a
-                          href="https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1"
+                          href="https://www.youtube.com/watch?v=9PNhFJMuy_o"
                           target="_blank"
                           class="btn btn-primary"
                           >Watch it now</a
@@ -540,13 +508,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col my-4">
+
+                  <!-- Video 3 -->
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
                         <img
-                          src="https://img.youtube.com/vi/GPzBeGDaNII/hqdefault.jpg"
+                          src="https://img.youtube.com/vi/457bOlxYNJQ/hqdefault.jpg"
                           class="card-img-top"
-                          alt="Tutorial thumbnail"
+                          alt="How to start working after you get a match?"
                         />
                         <button
                           type="button"
@@ -558,7 +528,7 @@
                             border: none;
                           "
                           data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
+                          data-bs-target="#videoModal3"
                         >
                           <svg
                             width="40"
@@ -575,12 +545,11 @@
                           </svg>
                         </button>
                       </div>
-                      <!-- Video Modal -->
                       <div
                         class="modal fade"
-                        id="videoModal"
+                        id="videoModal3"
                         tabindex="-1"
-                        aria-labelledby="videoModalLabel"
+                        aria-labelledby="videoModalLabel3"
                         aria-hidden="true"
                       >
                         <div
@@ -596,7 +565,7 @@
                               ></button>
                               <div class="ratio ratio-16x9">
                                 <iframe
-                                  id="modalVideo"
+                                  id="modalVideo3"
                                   width="560"
                                   height="315"
                                   src=""
@@ -611,31 +580,355 @@
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
+
                       <div class="card-body">
                         <h5 class="card-title">
-                          How to open a Freelancing account
+                          How to start working after you get a match?
                         </h5>
                         <a
-                          href="https://www.youtube.com/embed/GPzBeGDaNII?si=9Urxcw8PqBeIObtH&autoplay=1"
+                          href="https://www.youtube.com/watch?v=457bOlxYNJQ"
+                          target="_blank"
+                          class="btn btn-primary"
+                          >Watch it now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 4 -->
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/SgPMsc3SntE/hqdefault.jpg"
+                          class="card-img-top"
+                          alt="How to use workstation in Bizzmakr?"
+                        />
+                        <button
+                          type="button"
+                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            padding: 0;
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#videoModal4"
+                        >
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon
+                              points="16,12 28,20 16,28"
+                              fill="#30B0FF"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="modal fade"
+                        id="videoModal4"
+                        tabindex="-1"
+                        aria-labelledby="videoModalLabel4"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button
+                                type="button"
+                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe
+                                  id="modalVideo4"
+                                  width="560"
+                                  height="315"
+                                  src=""
+                                  title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          How to use workstation in Bizzmakr?
+                        </h5>
+                        <a
+                          href="https://www.youtube.com/watch?v=SgPMsc3SntE"
+                          target="_blank"
+                          class="btn btn-primary"
+                          >Watch it now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 5 -->
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/GLZ-38QU6RQ/hqdefault.jpg"
+                          class="card-img-top"
+                          alt="How to submit an order in Bizzmakr?"
+                        />
+                        <button
+                          type="button"
+                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            padding: 0;
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#videoModal5"
+                        >
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon
+                              points="16,12 28,20 16,28"
+                              fill="#30B0FF"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="modal fade"
+                        id="videoModal5"
+                        tabindex="-1"
+                        aria-labelledby="videoModalLabel5"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button
+                                type="button"
+                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe
+                                  id="modalVideo5"
+                                  width="560"
+                                  height="315"
+                                  src=""
+                                  title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          How to submit an order in Bizzmakr?
+                        </h5>
+                        <a
+                          href="https://www.youtube.com/watch?v=GLZ-38QU6RQ"
+                          target="_blank"
+                          class="btn btn-primary"
+                          >Watch it now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 6 -->
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/yKsz6b2s2-Y/hqdefault.jpg"
+                          class="card-img-top"
+                          alt="How to withdraw from Bizzmakr's Wallet?"
+                        />
+                        <button
+                          type="button"
+                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            padding: 0;
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#videoModal6"
+                        >
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon
+                              points="16,12 28,20 16,28"
+                              fill="#30B0FF"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="modal fade"
+                        id="videoModal6"
+                        tabindex="-1"
+                        aria-labelledby="videoModalLabel6"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button
+                                type="button"
+                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe
+                                  id="modalVideo6"
+                                  width="560"
+                                  height="315"
+                                  src=""
+                                  title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          How to withdraw from Bizzmakr's Wallet?
+                        </h5>
+                        <a
+                          href="https://www.youtube.com/watch?v=yKsz6b2s2-Y"
+                          target="_blank"
+                          class="btn btn-primary"
+                          >Watch it now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 7 -->
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/Brj-cYWurto/hqdefault.jpg"
+                          class="card-img-top"
+                          alt="Issue with your? No Problem!"
+                        />
+                        <button
+                          type="button"
+                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            padding: 0;
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#videoModal7"
+                        >
+                          <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon
+                              points="16,12 28,20 16,28"
+                              fill="#30B0FF"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="modal fade"
+                        id="videoModal7"
+                        tabindex="-1"
+                        aria-labelledby="videoModalLabel7"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button
+                                type="button"
+                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe
+                                  id="modalVideo7"
+                                  width="560"
+                                  height="315"
+                                  src=""
+                                  title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h5 class="card-title">Issue with your? No Problem!</h5>
+                        <a
+                          href="https://www.youtube.com/watch?v=Brj-cYWurto"
                           target="_blank"
                           class="btn btn-primary"
                           >Watch it now</a
@@ -655,309 +948,189 @@
                 tabindex="0"
               >
                 <div class="row">
-                  <div class="col my-4">
+                  <!-- Client Video A -->
+                  <!-- Client videos (static from playlist) -->
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
-                        <img
-                          src="https://img.youtube.com/vi/rmC_hPWq0mc/hqdefault.jpg"
-                          class="card-img-top"
-                          alt="Tutorial thumbnail"
-                        />
-                        <button
-                          type="button"
-                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
-                          style="
-                            width: 60px;
-                            height: 60px;
-                            padding: 0;
-                            border: none;
-                          "
-                          data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
-                        >
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                        <img src="https://img.youtube.com/vi/CkKV29MEFRU/hqdefault.jpg" class="card-img-top" alt="How to create a client account in Bizzmakr?" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal8">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20" r="20" fill="#fff" />
-                            <polygon
-                              points="16,12 28,20 16,28"
-                              fill="#30B0FF"
-                            />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
                           </svg>
                         </button>
                       </div>
-                      <!-- Video Modal -->
-                      <div
-                        class="modal fade"
-                        id="videoModal"
-                        tabindex="-1"
-                        aria-labelledby="videoModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-dialog-centered modal-lg"
-                        >
+                      <div class="modal fade" id="videoModal8" tabindex="-1" aria-labelledby="videoModalLabel8" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                           <div class="modal-content bg-transparent border-0">
                             <div class="modal-body p-0 position-relative">
-                              <button
-                                type="button"
-                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
                               <div class="ratio ratio-16x9">
-                                <iframe
-                                  id="modalVideo"
-                                  width="560"
-                                  height="315"
-                                  src=""
-                                  title="YouTube video player"
-                                  frameborder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                  referrerpolicy="strict-origin-when-cross-origin"
-                                  allowfullscreen
-                                ></iframe>
+                                <iframe id="modalVideo8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
                       <div class="card-body">
-                        <h5 class="card-title">How to open a Client account</h5>
-                        <a
-                          href="https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1"
-                          target="_blank"
-                          class="btn btn-primary"
-                          >Watch it now</a
-                        >
+                        <h5 class="card-title">How to create a client account in Bizzmakr?</h5>
+                        <a href="https://www.youtube.com/watch?v=CkKV29MEFRU" target="_blank" class="btn btn-primary">Watch it now</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col my-4">
+
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
-                        <img
-                          src="https://img.youtube.com/vi/rmC_hPWq0mc/hqdefault.jpg"
-                          class="card-img-top"
-                          alt="Tutorial thumbnail"
-                        />
-                        <button
-                          type="button"
-                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
-                          style="
-                            width: 60px;
-                            height: 60px;
-                            padding: 0;
-                            border: none;
-                          "
-                          data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
-                        >
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                        <img src="https://img.youtube.com/vi/xN8nK02_Mdc/hqdefault.jpg" class="card-img-top" alt="How to post a job in Bizzmakr?" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal9">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20" r="20" fill="#fff" />
-                            <polygon
-                              points="16,12 28,20 16,28"
-                              fill="#30B0FF"
-                            />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
                           </svg>
                         </button>
                       </div>
-                      <!-- Video Modal -->
-                      <div
-                        class="modal fade"
-                        id="videoModal"
-                        tabindex="-1"
-                        aria-labelledby="videoModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-dialog-centered modal-lg"
-                        >
+                      <div class="modal fade" id="videoModal9" tabindex="-1" aria-labelledby="videoModalLabel9" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                           <div class="modal-content bg-transparent border-0">
                             <div class="modal-body p-0 position-relative">
-                              <button
-                                type="button"
-                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
                               <div class="ratio ratio-16x9">
-                                <iframe
-                                  id="modalVideo"
-                                  width="560"
-                                  height="315"
-                                  src=""
-                                  title="YouTube video player"
-                                  frameborder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                  referrerpolicy="strict-origin-when-cross-origin"
-                                  allowfullscreen
-                                ></iframe>
+                                <iframe id="modalVideo9" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
                       <div class="card-body">
-                        <h5 class="card-title">How to open a Client account</h5>
-                        <a
-                          href="https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1"
-                          target="_blank"
-                          class="btn btn-primary"
-                          >Watch it now</a
-                        >
+                        <h5 class="card-title">How to post a job in Bizzmakr?</h5>
+                        <a href="https://www.youtube.com/watch?v=xN8nK02_Mdc" target="_blank" class="btn btn-primary">Watch it now</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col my-4">
+
+                  <div class="col-md-4 col-sm-6 my-4">
                     <div class="card">
                       <div class="position-relative">
-                        <img
-                          src="https://img.youtube.com/vi/rmC_hPWq0mc/hqdefault.jpg"
-                          class="card-img-top"
-                          alt="Tutorial thumbnail"
-                        />
-                        <button
-                          type="button"
-                          class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow"
-                          style="
-                            width: 60px;
-                            height: 60px;
-                            padding: 0;
-                            border: none;
-                          "
-                          data-bs-toggle="modal"
-                          data-bs-target="#videoModal"
-                        >
-                          <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
+                        <img src="https://img.youtube.com/vi/R2UjNYri8gM/hqdefault.jpg" class="card-img-top" alt="How to match with freelancers in Bizzmakr?" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal10">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20" r="20" fill="#fff" />
-                            <polygon
-                              points="16,12 28,20 16,28"
-                              fill="#30B0FF"
-                            />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
                           </svg>
                         </button>
                       </div>
-                      <!-- Video Modal -->
-                      <div
-                        class="modal fade"
-                        id="videoModal"
-                        tabindex="-1"
-                        aria-labelledby="videoModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-dialog-centered modal-lg"
-                        >
+                      <div class="modal fade" id="videoModal10" tabindex="-1" aria-labelledby="videoModalLabel10" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                           <div class="modal-content bg-transparent border-0">
                             <div class="modal-body p-0 position-relative">
-                              <button
-                                type="button"
-                                class="btn-close position-absolute top-0 end-0 m-3 z-3"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
                               <div class="ratio ratio-16x9">
-                                <iframe
-                                  id="modalVideo"
-                                  width="560"
-                                  height="315"
-                                  src=""
-                                  title="YouTube video player"
-                                  frameborder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                  referrerpolicy="strict-origin-when-cross-origin"
-                                  allowfullscreen
-                                ></iframe>
+                                <iframe id="modalVideo10" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <script>
-                        // Play video in modal and stop on close
-                        var videoModal = document.getElementById("videoModal");
-                        var modalVideo = document.getElementById("modalVideo");
-                        var videoSrc =
-                          "https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1";
-                        videoModal.addEventListener(
-                          "show.bs.modal",
-                          function () {
-                            modalVideo.src = videoSrc;
-                          }
-                        );
-                        videoModal.addEventListener(
-                          "hidden.bs.modal",
-                          function () {
-                            modalVideo.src = "";
-                          }
-                        );
-                      </script>
                       <div class="card-body">
-                        <h5 class="card-title">How to open a Client account</h5>
-                        <a
-                          href="https://www.youtube.com/embed/rmC_hPWq0mc?si=hS87ewCRmvrR7On3&autoplay=1"
-                          target="_blank"
-                          class="btn btn-primary"
-                          >Watch it now</a
-                        >
+                        <h5 class="card-title">How to match with freelancers in Bizzmakr?</h5>
+                        <a href="https://www.youtube.com/watch?v=R2UjNYri8gM" target="_blank" class="btn btn-primary">Watch it now</a>
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img src="https://img.youtube.com/vi/iog5eUvI_to/hqdefault.jpg" class="card-img-top" alt="What to do after getting a match?" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal11">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="modal fade" id="videoModal11" tabindex="-1" aria-labelledby="videoModalLabel11" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe id="modalVideo11" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">What to do after getting a match?</h5>
+                        <a href="https://www.youtube.com/watch?v=iog5eUvI_to" target="_blank" class="btn btn-primary">Watch it now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img src="https://img.youtube.com/vi/pi4eMRz9AyM/hqdefault.jpg" class="card-img-top" alt="How to withdraw from your wallet?" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal12">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="modal fade" id="videoModal12" tabindex="-1" aria-labelledby="videoModalLabel12" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe id="modalVideo12" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">How to withdraw from your wallet?</h5>
+                        <a href="https://www.youtube.com/watch?v=pi4eMRz9AyM" target="_blank" class="btn btn-primary">Watch it now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 my-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <img src="https://img.youtube.com/vi/Brj-cYWurto/hqdefault.jpg" class="card-img-top" alt="Issue with your? No Problem!" />
+                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#videoModal13">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#fff" />
+                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="modal fade" id="videoModal13" tabindex="-1" aria-labelledby="videoModalLabel13" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content bg-transparent border-0">
+                            <div class="modal-body p-0 position-relative">
+                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="ratio ratio-16x9">
+                                <iframe id="modalVideo13" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Issue with your? No Problem!</h5>
+                        <a href="https://www.youtube.com/watch?v=Brj-cYWurto" target="_blank" class="btn btn-primary">Watch it now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Removed duplicate placeholder cards (replaced with static playlist cards above) -->
                 </div>
               </div>
             </div>
@@ -971,16 +1144,41 @@
             <div class="col-lg-4">
               <div class="widget">
                 <p class="fw-bold fs-22">Bizzmakr</p>
-                <p class="mb-3">We believe that talent should never go unnoticed and that opportunity should never be out of reach. Every skill has the power to make an impact.</p>
+                <p class="mb-3">
+                  We believe that talent should never go unnoticed and that
+                  opportunity should never be out of reach. Every skill has the
+                  power to make an impact.
+                </p>
                 <p class="mb-4">Trade license number: 05-138-04863</p>
                 <nav class="nav social">
-                  <a href="https://www.linkedin.com/company/bizzmakr/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
-                      <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                  <a
+                    href="https://www.linkedin.com/company/bizzmakr/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                      ></path>
                     </svg>
                   </a>
-                  <a href=" https://www.instagram.com/bizzmakr/profilecard/?igsh=MXVpZTY1bjN5eGh6bg==" target="_blank">
-                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    href=" https://www.instagram.com/bizzmakr/profilecard/?igsh=MXVpZTY1bjN5eGh6bg=="
+                    target="_blank"
+                  >
+                    <svg
+                      width="38"
+                      height="38"
+                      viewBox="0 0 38 38"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
@@ -995,14 +1193,38 @@
                       />
                     </svg>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=100093363890265" target="_blank">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M31.8337 16.0961C31.8337 7.29808 24.7456 0.166748 16.0003 0.166748C7.25505 0.166748 0.166992 7.29808 0.166992 16.0961C0.166992 24.0487 5.95566 30.6385 13.5261 31.8334V20.7015H9.50655V16.0951H13.5261V12.5864C13.5261 8.5943 15.8895 6.38819 19.5069 6.38819C21.238 6.38819 23.0514 6.69958 23.0514 6.69958V10.6199H21.0533C19.0868 10.6199 18.4745 11.8486 18.4745 13.1089V16.0961H22.8657L22.1637 20.7005H18.4745V31.8334C26.045 30.6385 31.8337 24.0487 31.8337 16.0961Z" fill="black" />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100093363890265"
+                    target="_blank"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.8337 16.0961C31.8337 7.29808 24.7456 0.166748 16.0003 0.166748C7.25505 0.166748 0.166992 7.29808 0.166992 16.0961C0.166992 24.0487 5.95566 30.6385 13.5261 31.8334V20.7015H9.50655V16.0951H13.5261V12.5864C13.5261 8.5943 15.8895 6.38819 19.5069 6.38819C21.238 6.38819 23.0514 6.69958 23.0514 6.69958V10.6199H21.0533C19.0868 10.6199 18.4745 11.8486 18.4745 13.1089V16.0961H22.8657L22.1637 20.7005H18.4745V31.8334C26.045 30.6385 31.8337 24.0487 31.8337 16.0961Z"
+                        fill="black"
+                      />
                     </svg>
                   </a>
-                  <a href="https://x.com/bizzmakr?s=21&t=PYq3mFj63ErKW3GGwfvi7A" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
-                      <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                  <a
+                    href="https://x.com/bizzmakr?s=21&t=PYq3mFj63ErKW3GGwfvi7A"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                      ></path>
                     </svg>
                   </a>
                 </nav>
@@ -1016,32 +1238,80 @@
                 <ul class="list-unstyled text-reset mb-0">
                   <li>
                     <a href="./">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Home
                     </a>
                   </li>
                   <li>
                     <a href="about-us.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       About us
                     </a>
                   </li>
                   <li>
                     <a href="how-it-works.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       How it Works
                     </a>
                   </li>
                   <li>
                     <a href="pricing.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Pricing
                     </a>
@@ -1057,24 +1327,60 @@
                 <ul class="list-unstyled text-reset mb-0">
                   <li>
                     <a href="features.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Features
                     </a>
                   </li>
                   <li>
                     <a href="contact-us.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Support
                     </a>
                   </li>
                   <li>
                     <a href="privacy-policy.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Privacy Policy
                     </a>
@@ -1082,8 +1388,20 @@
 
                   <li>
                     <a href="refund-policy.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Refund Policy
                     </a>
@@ -1091,8 +1409,20 @@
 
                   <li>
                     <a href="terms-conditions.html">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.375 4.25L11.625 9.5L6.375 14.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.375 4.25L11.625 9.5L6.375 14.75"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                       Terms and Conditions
                     </a>
@@ -1105,30 +1435,62 @@
             <div class="col-md-4 col-lg-3">
               <div class="widget">
                 <h4 class="widget-title mb-3">Contact Us</h4>
-                <div class="d-flex align-items-center gap-3 bg-soft-blue rounded-3 p-2 mb-3">
-                  <svg class="w-7" width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div
+                  class="d-flex align-items-center gap-3 bg-soft-blue rounded-3 p-2 mb-3"
+                >
+                  <svg
+                    class="w-7"
+                    width="31"
+                    height="24"
+                    viewBox="0 0 31 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M27.2808 0.105469H3.52078C1.88728 0.105469 0.565631 1.44197 0.565631 3.07547L0.550781 20.8955C0.550781 22.529 1.88728 23.8655 3.52078 23.8655H27.2808C28.9143 23.8655 30.2508 22.529 30.2508 20.8955V3.07547C30.2508 1.44197 28.9143 0.105469 27.2808 0.105469ZM26.6868 6.41672L16.1878 12.9804C15.7126 13.2774 15.0889 13.2774 14.6137 12.9804L4.11478 6.41672C3.96588 6.33313 3.83548 6.2202 3.73149 6.08475C3.62749 5.94931 3.55206 5.79417 3.50976 5.62873C3.46745 5.46329 3.45916 5.29099 3.48537 5.12225C3.51159 4.95352 3.57177 4.79185 3.66227 4.64705C3.75278 4.50224 3.87172 4.3773 4.01191 4.2798C4.1521 4.18229 4.31061 4.11424 4.47786 4.07977C4.6451 4.0453 4.81761 4.04512 4.98492 4.07925C5.15224 4.11338 5.31089 4.1811 5.45128 4.27832L15.4008 10.5005L25.3503 4.27832C25.4907 4.1811 25.6493 4.11338 25.8166 4.07925C25.984 4.04512 26.1565 4.0453 26.3237 4.07977C26.491 4.11424 26.6495 4.18229 26.7897 4.2798C26.9298 4.3773 27.0488 4.50224 27.1393 4.64705C27.2298 4.79185 27.29 4.95352 27.3162 5.12225C27.3424 5.29099 27.3341 5.46329 27.2918 5.62873C27.2495 5.79417 27.1741 5.94931 27.0701 6.08475C26.9661 6.2202 26.8357 6.33313 26.6868 6.41672Z"
                       fill="black"
                     />
                   </svg>
                   <div>
-                    <a class="fw-normal lh-sm mb-0 fs-14 text-black" href="mailto:support@bizzmakr.com">support@bizzmakr.com</a>
+                    <a
+                      class="fw-normal lh-sm mb-0 fs-14 text-black"
+                      href="mailto:support@bizzmakr.com"
+                      >support@bizzmakr.com</a
+                    >
                   </div>
                 </div>
-                <div class="d-flex align-items-center gap-3 bg-soft-blue rounded-3 p-2 mb-3">
-                  <svg class="w-10" width="40" height="35" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div
+                  class="d-flex align-items-center gap-3 bg-soft-blue rounded-3 p-2 mb-3"
+                >
+                  <svg
+                    class="w-10"
+                    width="40"
+                    height="35"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <g clip-path="url(#clip0_605_4039)">
-                      <path d="M23.0696 24.3648V6.54481H18.2096V1.68481H3.62965V24.3648H0.389648V25.9848H11.7296V21.1248H14.9696V25.9848H26.3096V24.3648H23.0696ZM10.1096 17.8848H6.86965V14.6448H10.1096V17.8848ZM10.1096 13.0248H6.86965V9.78481H10.1096V13.0248ZM10.1096 8.16481H6.86965V4.92481H10.1096V8.16481ZM14.9696 17.8848H11.7296V14.6448H14.9696V17.8848ZM14.9696 13.0248H11.7296V9.78481H14.9696V13.0248ZM14.9696 8.16481H11.7296V4.92481H14.9696V8.16481ZM21.4496 17.8848H18.2096V14.6448H21.4496V17.8848ZM21.4496 13.0248H18.2096V9.78481H21.4496V13.0248Z" fill="black" />
+                      <path
+                        d="M23.0696 24.3648V6.54481H18.2096V1.68481H3.62965V24.3648H0.389648V25.9848H11.7296V21.1248H14.9696V25.9848H26.3096V24.3648H23.0696ZM10.1096 17.8848H6.86965V14.6448H10.1096V17.8848ZM10.1096 13.0248H6.86965V9.78481H10.1096V13.0248ZM10.1096 8.16481H6.86965V4.92481H10.1096V8.16481ZM14.9696 17.8848H11.7296V14.6448H14.9696V17.8848ZM14.9696 13.0248H11.7296V9.78481H14.9696V13.0248ZM14.9696 8.16481H11.7296V4.92481H14.9696V8.16481ZM21.4496 17.8848H18.2096V14.6448H21.4496V17.8848ZM21.4496 13.0248H18.2096V9.78481H21.4496V13.0248Z"
+                        fill="black"
+                      />
                     </g>
                     <defs>
                       <clipPath id="clip0_605_4039">
-                        <rect width="25.92" height="25.92" fill="white" transform="translate(0.389648 0.0651855)" />
+                        <rect
+                          width="25.92"
+                          height="25.92"
+                          fill="white"
+                          transform="translate(0.389648 0.0651855)"
+                        />
                       </clipPath>
                     </defs>
                   </svg>
                   <div>
-                    <p class="fw-normal lh-sm mb-0 fs-14">House#197, Smith Road, Puratan Kasha, Jashore, Bangladesh.</p>
+                    <p class="fw-normal lh-sm mb-0 fs-14">
+                      House#197, Smith Road, Puratan Kasha, Jashore, Bangladesh.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1136,17 +1498,31 @@
             </div>
             <!-- /column -->
             <div class="col-12 text-center">
-              <span class="h3">Secured with <img class="img-fluid" width="150px" src="./assets/img/sslogo.png" alt="" /></span>
+              <span class="h3"
+                >Secured with
+                <img
+                  class="img-fluid"
+                  width="150px"
+                  src="./assets/img/sslogo.png"
+                  alt=""
+              /></span>
             </div>
             <div class="col-12 text-center">
-              <img class="img-fluid mt-3" width="500Ppx" src="./assets/img/payment-method-hd.png" alt="" />
+              <img
+                class="img-fluid mt-3"
+                width="500Ppx"
+                src="./assets/img/payment-method-hd.png"
+                alt=""
+              />
             </div>
           </div>
           <!--/.row -->
         </div>
         <!-- /.container -->
         <div class="container-fluid bg-primary py-1">
-          <p class="mb-0 text-center px-4 text-white fs-26 fs-sm-65 fw-800">Bizzmakr</p>
+          <p class="mb-0 text-center px-4 text-white fs-26 fs-sm-65 fw-800">
+            Bizzmakr
+          </p>
         </div>
         <!-- /.container -->
       </footer>
@@ -1178,5 +1554,299 @@
     <script src="./assets/plugin/aos/aos.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <!-- Consolidated YouTube IFrame API handler for tutorial modals -->
+    <script>
+      // NOTE: If you open this page via the file:// protocol you'll see many
+      // "postMessage" origin warnings from YouTube (target origin 'file://' vs 'null').
+      // Those are normal when running locally from the filesystem. To avoid them
+      // and ensure the IFrame API works correctly, serve the site over HTTP (for
+      // example: `python3 -m http.server` in the project folder or use the
+      // Live Server extension).
+
+      // Load YouTube IFrame API
+      (function () {
+        var tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })();
+
+      // Map of modal iframe IDs to video IDs
+      var ytModalMap = {
+        modalVideo1: "CNsfdreYLss",
+        modalVideo2: "9PNhFJMuy_o",
+        modalVideo3: "457bOlxYNJQ",
+        modalVideo4: "SgPMsc3SntE",
+        modalVideo5: "GLZ-38QU6RQ",
+        modalVideo6: "yKsz6b2s2-Y",
+        modalVideo7: "Brj-cYWurto",
+        // Clients tab — full playlist (static entries)
+        modalVideo8: "CkKV29MEFRU",
+        modalVideo9: "xN8nK02_Mdc",
+        modalVideo10: "R2UjNYri8gM",
+        modalVideo11: "iog5eUvI_to",
+        modalVideo12: "pi4eMRz9AyM",
+        modalVideo13: "Brj-cYWurto",
+      };
+
+      var ytPlayers = {}; // store YT.Player instances
+      var ytPlayerReady = {}; // flags for ready state
+
+      // Helper: create YT.Player instances for an array of iframe IDs (id strings)
+      function createPlayersForIds(iframeIds) {
+        iframeIds.forEach(function (iframeId) {
+          if (ytPlayers[iframeId]) return; // already created
+          var el = document.getElementById(iframeId);
+          if (!el) return;
+          try {
+            var playerVars = {
+              rel: 0,
+              modestbranding: 1,
+              controls: 1,
+              enablejsapi: 1,
+            };
+            if (pageOrigin) {
+              playerVars.origin = pageOrigin;
+            }
+            ytPlayers[iframeId] = new YT.Player(iframeId, {
+              videoId: ytModalMap[iframeId],
+              playerVars: playerVars,
+              events: {
+                onReady: function (event) {
+                  ytPlayerReady[iframeId] = true;
+                },
+                onStateChange: function (event) {},
+              },
+            });
+          } catch (err) {
+            console.warn("YT.Player creation failed for", iframeId, err);
+            ytPlayers[iframeId] = null;
+            ytPlayerReady[iframeId] = false;
+          }
+        });
+      }
+
+      // Helper: attach modal handlers (show/hidden) for a single iframeId/modalId pair
+      function attachModalHandlersFor(iframeId, modalId) {
+        var modalEl = document.getElementById(modalId);
+        if (!modalEl) return;
+        modalEl.addEventListener("show.bs.modal", function () {
+          var player = ytPlayers[iframeId];
+          if (player && typeof player.playVideo === "function") {
+            try {
+              player.playVideo();
+            } catch (e) {
+              if (typeof player.mute === "function") {
+                try {
+                  player.mute();
+                } catch (_) {}
+              }
+              try {
+                player.playVideo();
+              } catch (e3) {
+                console.warn("playVideo failed", e3);
+              }
+            }
+            return;
+          }
+          var iframe = document.getElementById(iframeId);
+          if (iframe) {
+            var vid = ytModalMap[iframeId];
+            var src =
+              "https://www.youtube.com/embed/" +
+              vid +
+              "?autoplay=1&rel=0&modestbranding=1";
+            if (pageOrigin) {
+              src += "&origin=" + encodeURIComponent(pageOrigin);
+            }
+            iframe.src = src;
+          }
+        });
+
+        modalEl.addEventListener("hidden.bs.modal", function () {
+          var player = ytPlayers[iframeId];
+          if (player && typeof player.stopVideo === "function") {
+            try {
+              player.stopVideo();
+            } catch (e) {}
+            return;
+          }
+          var iframe = document.getElementById(iframeId);
+          if (iframe) {
+            iframe.src = "";
+          }
+        });
+      }
+
+      // Determine the page origin. When served via file:// origin will be 'null'
+      // in the iframe environment which causes postMessage origin warnings.
+      // Prefer serving over HTTP so `window.location.origin` is a valid origin
+      // (for example http://localhost:8000). If origin is not available we
+      // won't add the origin param (no-op) and will fall back to direct iframe src.
+      var pageOrigin =
+        window.location && window.location.protocol === "file:"
+          ? ""
+          : window.location && window.location.origin
+          ? window.location.origin
+          : "";
+
+      // Called by the YouTube API when ready
+      function onYouTubeIframeAPIReady() {
+        // create players but do not autoplay; we will call playVideo() on modal open
+        Object.keys(ytModalMap).forEach(function (iframeId) {
+          var el = document.getElementById(iframeId);
+          if (!el) return;
+          try {
+            // include origin in playerVars when available to match postMessage target
+            var playerVars = {
+              rel: 0,
+              modestbranding: 1,
+              controls: 1,
+              enablejsapi: 1,
+            };
+            if (pageOrigin) {
+              playerVars.origin = pageOrigin;
+            }
+
+            ytPlayers[iframeId] = new YT.Player(iframeId, {
+              videoId: ytModalMap[iframeId],
+              playerVars: playerVars,
+              events: {
+                onReady: function (event) {
+                  ytPlayerReady[iframeId] = true;
+                },
+                onStateChange: function (event) {
+                  /* optional: handle state */
+                },
+              },
+            });
+          } catch (err) {
+            // If creation fails (rare), leave a fallback and continue
+            console.warn("YT.Player creation failed for", iframeId, err);
+            ytPlayers[iframeId] = null;
+            ytPlayerReady[iframeId] = false;
+          }
+        });
+
+        // Attach Bootstrap modal event handlers after players are created
+        // Attach handlers for existing map entries using the helper
+        Object.keys(ytModalMap).forEach(function (iframeId, idx) {
+          var modalId = "videoModal" + (idx + 1);
+          attachModalHandlersFor(iframeId, modalId);
+        });
+      }
+
+      // expose API callback to global scope (YouTube calls this)
+      window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+    </script>
+
+    <script>
+      // Dynamically fetch the Clients playlist (RSS) and render cards bottom-to-top
+      (function () {
+        var playlistFeed =
+          "https://www.youtube.com/feeds/videos.xml?playlist_id=PLNmqlFwh_H2dZ2R3AtVdgW7qTuwxMhl0X";
+        fetch(playlistFeed)
+          .then(function (resp) {
+            if (!resp.ok) throw new Error("Feed fetch failed");
+            return resp.text();
+          })
+          .then(function (xmlText) {
+            try {
+              var parser = new DOMParser();
+              var doc = parser.parseFromString(xmlText, "application/xml");
+              var entries = Array.from(doc.getElementsByTagName("entry"));
+              if (entries.length === 0) {
+                // some feeds use default namespace; try with localName
+                entries = Array.from(doc.getElementsByTagNameNS("*", "entry"));
+              }
+
+              // Build card HTML bottom-to-top (playlist order; newest last in feed -> we want bottom-to-top)
+              var cards = [];
+              entries.forEach(function (entry, idx) {
+                var vidEl =
+                  entry.getElementsByTagName("yt:videoId")[0] ||
+                  entry.getElementsByTagNameNS("*", "videoId")[0];
+                var titleEl = entry.getElementsByTagName("title")[0];
+                if (!vidEl) return;
+                var vid = vidEl.textContent.trim();
+                var title = titleEl ? titleEl.textContent.trim() : "";
+                cards.push({ vid: vid, title: title });
+              });
+
+              if (cards.length === 0) return;
+
+              // We want bottom-to-top: reverse the feed order so earliest appears first in DOM
+              cards.reverse();
+
+              var containerRow = document.querySelector("#pills-profile .row");
+              if (!containerRow) return;
+
+              // Clear existing children
+              containerRow.innerHTML = "";
+
+              // For each card, create the markup and update ytModalMap
+              cards.forEach(function (item, i) {
+                var modalIndex = 8 + i; // start at 8
+                var modalId = "videoModal" + modalIndex;
+                var iframeId = "modalVideo" + modalIndex;
+
+                // create column
+                var col = document.createElement("div");
+                col.className = "col-md-4 col-sm-6 my-4";
+
+                col.innerHTML =
+                  '\n                    <div class="card">\n                      <div class="position-relative">\n                        <img src="https://img.youtube.com/vi/' +
+                  item.vid +
+                  '/hqdefault.jpg" class="card-img-top" alt="' +
+                  escapeHtml(item.title) +
+                  '" />\n                        <button type="button" class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 60px; height: 60px; padding: 0; border: none;" data-bs-toggle="modal" data-bs-target="#' +
+                  modalId +
+                  '">\n                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">\n                            <circle cx="20" cy="20" r="20" fill="#fff" />\n                            <polygon points="16,12 28,20 16,28" fill="#30B0FF" />\n                          </svg>\n                        </button>\n                      </div>\n                      <!-- Video Modal -->\n                      <div class="modal fade" id="' +
+                  modalId +
+                  '" tabindex="-1" aria-labelledby="' +
+                  modalId +
+                  'Label" aria-hidden="true">\n                        <div class="modal-dialog modal-dialog-centered modal-lg">\n                          <div class="modal-content bg-transparent border-0">\n                            <div class="modal-body p-0 position-relative">\n                              <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>\n                              <div class="ratio ratio-16x9">\n                                <iframe id="' +
+                  iframeId +
+                  '" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\n                              </div>\n                            </div>\n                          </div>\n                        </div>\n                      </div>\n                      <div class="card-body">\n                        <h5 class="card-title">' +
+                  escapeHtml(item.title) +
+                  '</h5>\n                        <a href="https://www.youtube.com/watch?v=' +
+                  item.vid +
+                  '" target="_blank" class="btn btn-primary">Watch it now</a>\n                      </div>\n                    </div>\n                  ';
+
+                containerRow.appendChild(col);
+
+                // update mapping
+                ytModalMap[iframeId] = item.vid;
+
+                // attach handlers (if API already ready) or they'll be created in onYouTubeIframeAPIReady
+                if (window.YT && window.YT.Player) {
+                  try {
+                    createPlayersForIds([iframeId]);
+                  } catch (e) {}
+                }
+                attachModalHandlersFor(iframeId, modalId);
+              });
+            } catch (err) {
+              console.warn("Failed to parse playlist feed", err);
+            }
+          })
+          .catch(function (err) {
+            console.warn("Could not load playlist feed", err);
+          });
+
+        function escapeHtml(str) {
+          return String(str).replace(/[&<>"']/g, function (ch) {
+            return {
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            }[ch];
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
